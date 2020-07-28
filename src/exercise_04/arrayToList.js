@@ -14,7 +14,7 @@ export default function arrayToList(array) {
   return createlist(array);
 
   function createlist(array) {
-    return array.length > 1 ? { value: array[0], next: createlist(array.slice(1))} : {value: array[0], next: null };
+    return array.length > 1 ? { value: array[0], next: createlist(array.slice(1)) } : { value: array[0], next: null };
   }
   
 }
